@@ -1,0 +1,19 @@
+###INITIAL GET
+GET http://localhost:8080/
+
+###GET PRODUCTS
+GET http://localhost:8080/products
+
+###GET PRODUCTS WITH LIMIT
+GET http://localhost:8080/products?limit=5
+
+###GET PRODUCTS BY ID
+GET http://localhost:8080/products/7
+
+
+
+###GET USERS
+GET http://localhost:8080/users
+
+###GET USERS BY ID
+GET http://localhost:8080/users/5
