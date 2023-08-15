@@ -1,0 +1,57 @@
+### GET PRODUCTS
+GET http://localhost:8080/api/products/
+
+### GET PRODUCTS WITH LIMIT
+GET http://localhost:8080/api/products?limit=2
+
+### GET PRODUCTS BY ID
+GET http://localhost:8080/api/products/5
+
+### POST ADD PRODUCT
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "title": "product example",
+  "description": "test product",
+  "category": "products",
+  "price": 1000,
+  "thumbnail": "no image",
+  "code": "0014",
+  "status": true,
+  "stock": 15
+}
+
+### PUT UPDATE PRODUCT
+PUT http://localhost:8080/api/products/8
+Content-Type: application/json
+
+{
+  "title": "product example",
+  "description": "test product 3",
+  "category": "products",
+  "price": 150,
+  "thumbnail": "no image",
+  "code": "004",
+  "status": true,
+  "stock": 1
+}
+### DELETE
+DELETE http://localhost:8080/api/products/8
+
+### POST CREATES CART
+POST http://localhost:8080/api/carts
+
+### GET CART BY ID
+GET http://localhost:8080/api/carts/1
+
+### POST ADD PRODUCT TO CHART
+POST http://localhost:8080/api/carts/1/product/6
+
+
+
+###GET USERS
+GET http://localhost:8080/users
+
+###GET USERS POR ID
+GET http://localhost:8080/users/5
